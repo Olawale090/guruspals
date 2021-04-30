@@ -1,0 +1,29 @@
+@import url('./form.css');
+
+.dashboard_section{
+    width:90%;
+    margin-left: 5%;
+    background-color: white;
+    margin-top: 1em;
+}
+
+.submit_btn{
+    max-width: 8em;
+}
+
+.text_answers{
+  width: 50%;  
+  height: 50%;
+  margin-left: 10%;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+.image_answers{
+    margin-left: 10%;
+    background-color: coral;
+    height: 2.5em;
+    width: 10em;
+    border:none;
+    color: white;
+}
