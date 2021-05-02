@@ -27,12 +27,13 @@ a.link{
     align-items: center;
 }
 
+
 .right_menu{
     display: inline-flex;
     list-style: none;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-left: 50%;
+    margin-left: 47%;
     font-size: 1.1rem;
 }
 
@@ -60,6 +61,73 @@ li.subscription{
     color:white;
 }
 
+li.mobile_view_menu{
+    background-image: url('../assets/icons/042-menu.svg');
+    background-repeat: none;
+    height: 2em;
+    width: 2em;
+    margin-right: 0.6em;
+    display: none;
+}
+
+/* mobile menu display was handled here */
+
+.mobile_menu_list{
+    background-color: rgb(44, 44, 44);;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.right_mobile_menu{
+    list-style: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* media query for nav bar and its content */
+
+@media screen and (max-width:360px) {
+
+    .menu_bar{
+        height: 2.5em;
+        width: 100%;
+    }
+
+    .left_menu{
+        display:flex;
+        list-style: none;
+        margin-left: 0;
+    }
+
+    .left_menu>li{
+        font-size: 1.5rem;
+    }
+
+    .home,.subscription,.candidate,.guest,.admin{
+        display: none;
+    }
+
+    .right_menu{
+        margin-right: 5%;
+    }
+
+    .right_menu>li{
+        margin-left: 0;
+    }
+
+    li.mobile_view_menu{
+        margin-right: 2em;
+        display: block;
+    }
+    
+}
+
 
 .cell_holder{
     width: 60%;  
@@ -67,6 +135,13 @@ li.subscription{
     display: flex;
     flex-direction: column;
     align-items: left;
+}
+
+@media screen and (max-width:360px){
+    .cell_holder{
+        margin-left: 0;
+        width: 100%;
+    }
 }
 
 .cells{
@@ -77,7 +152,12 @@ li.subscription{
     padding: 1em;
     border: gray;
     text-align: left;
+}
 
+@media screen and (max-width:360px){
+    .dates{
+        font-size: 0.7rem;
+    }
 }
 
 .dates{
@@ -86,13 +166,28 @@ li.subscription{
 }
 
 .contacts{
-    /* color: rgb(31, 148, 243); */
     color:whitesmoke;
     background-color: rgb(37, 37, 37);
 }
 
+@media screen and (max-width:360px){
+    .contacts{
+        font-size: 0.7rem;
+    }
+}
+
 .objectives{
     background-color: white;
+}
+
+@media screen and (max-width:360px){
+    .objectives{
+        height: 3%;
+    }
+
+    .objectives>.cells{
+        font-size: 0.6rem;
+    }
 }
 
 .auth{
@@ -103,6 +198,15 @@ li.subscription{
     padding: 1em;
     box-sizing: border-box;
     border-radius: 2px;
+}
+
+@media screen and (max-width:360px){
+
+    .auth{
+        width: 100%;
+        margin-left: 0;
+    }
+
 }
 
 .pin_label{
@@ -116,12 +220,28 @@ li.subscription{
     border: solid coral 1px;
 }
 
+
 .pin_submit{
     background-color: rgb(0, 153, 255);
     color: white;
     border: none;
     padding: 0.6em;
     box-sizing: border-box;
+    width: 5em;
+}
+
+@media screen and (max-width:360px){
+
+    .pin_input{
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .pin_submit{ 
+        width: 100%;
+        margin-top: 1%;
+    }
+
 }
 
 
