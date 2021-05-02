@@ -75,11 +75,20 @@ li.mobile_view_menu{
 .mobile_menu_list{
     background-color: rgb(44, 44, 44);;
     width: 100%;
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: flex;
 }
 
 .right_mobile_menu{
@@ -122,8 +131,11 @@ li.mobile_view_menu{
     }
 
     li.mobile_view_menu{
-        margin-right: 2em;
         display: block;
+    }
+
+    .right_mobile_menu>li{
+        margin-bottom: 1em;
     }
     
 }
