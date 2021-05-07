@@ -204,9 +204,9 @@ li.mobile_view_menu{
     background-color: white;
 }
 
-.bullet{
-    border-left: solid 5px coral;
-}
+/* .bullet{
+    border-left: solid 5px rgb(15, 14, 14);
+} */
 
 @media screen and (max-width:360px){
     .objectives{

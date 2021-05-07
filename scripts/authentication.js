@@ -19,10 +19,12 @@ auth.prototype = {
             }else if(this.pin.value === ''){
 
                 alert("please enter your pin ", this.pin.value);
+                navigator.vibrate([200,50,400]);
 
             }else{
 
                 alert(" Please enter correct PIN " + this.pin.value);
+                navigator.vibrate([200,50,400]);
 
             }        
     }

@@ -65,6 +65,8 @@ input,select{
 .form_notification{
     color:red;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 100%;
 }
 
 option{
@@ -72,10 +74,4 @@ option{
     color: coral;
     border: none;
     height: 10em;
-}
-
-option:hover{
-    
-    background-color: whitesmoke;
-    
 }
