@@ -1,5 +1,5 @@
 "use strict";
-import { auth  } from "./authentication.js";
+// import { auth  } from "./authentication.js";
 
 const widget = function(){
     this.menu_btn = document.querySelector(".mobile_view_menu");
@@ -27,28 +27,4 @@ const widget_controller = new widget();
 
 widget_controller.openMenu();
 
-const pinVerification = function(){
 
-    auth.call(this);
-
-};
-
-
-pinVerification.prototype = {
-
-    submitPin(){
-
-        this.submit_btn.addEventListener('click',(e)=>{
-
-            e.preventDefault();
-            const authenticate = new auth();
-            authenticate.verifyPin();
-            
-        });
-    }
-
-
-};
-
-const loginPin = new pinVerification();
-loginPin.submitPin();

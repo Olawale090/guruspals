@@ -31,3 +31,29 @@ auth.prototype = {
 
 };
 
+const pinVerification = function(){
+
+    auth.call(this);
+
+};
+
+
+pinVerification.prototype = {
+
+    submitPin(){
+        
+        this.submit_btn.addEventListener('click',(e)=>{
+
+            e.preventDefault();
+            const authenticate = new auth();
+            authenticate.verifyPin();
+            
+        });
+    }
+
+
+};
+
+const loginPin = new pinVerification();
+loginPin.submitPin();
+
