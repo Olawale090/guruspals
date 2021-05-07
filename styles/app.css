@@ -9,6 +9,16 @@ html,body{
     src: url('../assets/fonts/Schoolwork-Regular.ttf');
 }
 
+@font-face {
+    font-family: lato;
+    src: url("../assets/fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url("../assets/fonts/Quicksand-Regular.otf");
+}
+
 a{
     text-decoration: none;
 }
@@ -158,7 +168,6 @@ li.mobile_view_menu{
 
 .cells{
     color: coral;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1rem;
     margin-top: 0.5em;
     padding: 1em;
@@ -175,11 +184,14 @@ li.mobile_view_menu{
 .dates{
     color: black;
     background-color: whitesmoke;
+    font-family: Quicksand;
 }
 
 .contacts{
     color:whitesmoke;
     background-color: rgb(37, 37, 37);
+    font-family: Quicksand;
+    list-style-type: disc;
 }
 
 @media screen and (max-width:360px){
@@ -190,6 +202,10 @@ li.mobile_view_menu{
 
 .objectives{
     background-color: white;
+}
+
+.bullet{
+    border-left: solid 5px coral;
 }
 
 @media screen and (max-width:360px){
@@ -254,6 +270,11 @@ li.mobile_view_menu{
         margin-top: 1%;
     }
 
+}
+
+.form_notification{
+    color:red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 

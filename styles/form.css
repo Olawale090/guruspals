@@ -61,3 +61,21 @@ input,select{
     border: none;
     font-size: 1.05rem;
 }
+
+.form_notification{
+    color:red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+option{
+    background-color: white;
+    color: coral;
+    border: none;
+    height: 10em;
+}
+
+option:hover{
+    
+    background-color: whitesmoke;
+    
+}
