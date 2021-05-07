@@ -28,10 +28,10 @@ guestAccount.prototype = {
         
         try {
 
-            let mobileResponse = navigator.vibrate([200,50,400]);
             this.guestLogin.addEventListener('click',(e)=>{
 
                 e.preventDefault();
+                console.dir(this.data.password);
 
                 try {
                     for (const i in this.data) {
@@ -44,12 +44,12 @@ guestAccount.prototype = {
                         } else if(this.phoneNumber.value === "" || this.password.value === "" || this.examType === ""){
                             
                             this.alert.textContent = " Please enter value in the empty field ";
-                            mobileResponse
+                            navigator.vibrate([200,50,400]);
 
                         }else{
             
                             this.alert.textContent = " Please enter correct phone number or password ";
-                            mobileResponse
+                            navigator.vibrate([200,50,400]);
                         }
                     }
 
